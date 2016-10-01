@@ -1,0 +1,27 @@
+
+CONFIG
+
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+
+CLONAR REPOSITORIO
+$ git clone [url]
+
+ESTADO
+$ git status
+
+AGREGAR TODOS
+$ git add -A
+
+CREAR COMMIT
+$ git commit -m "DESCRIPCION"
+
+SUBIR UN COMMIT
+$ git push
+
+TRAER LOS CAMBIOS
+$ git fetch origin
+
+COMBINAR CAMBIOS CON ARCHIVOS LOCALES
+$ git merge [bookmark]/[branch]
+
