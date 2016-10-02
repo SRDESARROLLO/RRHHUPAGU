@@ -1,0 +1,18 @@
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <ui:composition>
+        
+        <!-- Bootstrap CSS -->
+        
+        <link href="#{request.contextPath}/resources/css/bootstrap.min.css" rel="stylesheet"></link>
+        <link href="#{request.contextPath}/resources/css/custom.css" rel="stylesheet"></link>
+        <!-- <link href="#{request.contextPath}/resources/css/signin.css" rel="stylesheet"></link>
+         
+        <link href="#{request.contextPath}/resources/css/carousel.css" rel="stylesheet"></link>
+        -->
+        <link href="#{request.contextPath}/resources/css/cover.css" rel="stylesheet"></link>
+        
+             
+        
+    </ui:composition>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/facelets/templates/simple.xhtml">
+	<ui:define name="content">
+
+		
+			<div name="Divs" class="col-md-12"
+				style="margin-top: 50px; border-bottom: solid; border-width: 1px; border-color: #C3C3C7">
+				<legend style="color: #5A5A5D; background-color: #F3F3F5">DATOS
+					PERSONALES &#9660;</legend>
+				<div class="col-md-6">
+					<table class="table table-bordered">
+						<tbody>
+							<tr>
+								<td style="vertical-align: middle">ID:<input id="idpe"
+									class="form-control" disabled="false"/></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td style="vertical-align: middle">Nombres: <input
+									id="nope" class="form-control"/></td>
+								<td></td>
+							</tr>
+							<tr>
+
+								<td style="vertical-align: middle">Apellido Paterno: <input
+									id="appape" class="form-control"/></td>
+
+								<td style="vertical-align: middle">Apellido Materno: <input
+									id="apmape" class="form-control"/></td>
+							</tr>
+							<tr>
+
+								<td style="vertical-align: middle">Cargo: <select id="cape"
+									class="form-control">
+								</select>
+								</td>
+
+								<td style="vertical-align: middle">Sede: <select id="sepe"
+									class="form-control"><option value="0">Cajamarca</option>
+								</select>
+								</td>
+							</tr>
+							<tr>
+
+								<td style="vertical-align: middle">Tipo Documento: <select
+									id="tido" class="form-control">
+								</select>
+								</td>
+
+
+								<td style="vertical-align: middle">Número Documento: <input
+									id="nudo" type="number" class="form-control"></td>
+							</tr>
+
+
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-6">
+					<table class="table table-bordered">
+						<tbody>
+							<tr>
+								<td style="height: 140px"></td>
+							</tr>
+							<tr>
+
+								<td style="vertical-align: middle">Fecha Nacimiento: <input
+									id="fenape" type="date" style="height: 35px"
+									class="form-control"></td>
+
+								<td style="vertical-align: middle">Estado Civil: <select
+									id="escipe" class="form-control">
+								</select>
+								</td>
+							</tr>
+							<tr style="display: none">
+
+								<td style="vertical-align: middle; width: 50%">
+									Nacionalidad: <select id="nape" class="form-control">
+								</select>
+								</td>
+								<td></td>
+							</tr>
+
+							<tr>
+
+								<td style="vertical-align: middle">Dirección: <input
+									id="dirpe" class="form-control"></td>
+
+								<td style="vertical-align: middle">Ciudad: <select
+									id="deppe" class="form-control"
+									onchange="javascript:loadDistrito()">
+								</select>
+								</td>
+							</tr>
+							<tr>
+								<td style="vertical-align: middle">E-mail: <input
+									id="emape" class="form-control" DISABLED></td>
+
+
+								<td style="vertical-align: middle">Telefono 1: <input
+									id="te1pe" class="form-control"></td>
+							</tr>
+							<tr style="display: none">
+
+								<td style="vertical-align: middle">Telefono 2: <input
+									id="te2pe" class="form-control"></td>
+
+								<td style="vertical-align: middle">Celular 1: <input
+									id="ce1pe" class="form-control"></td>
+							</tr>
+							<tr style="display: none">
+
+								<td style="vertical-align: middle">Celular 2: <input
+									id="ce2pe" class="form-control"></td>
+								<td style="vertical-align: middle; display: none">
+									Distrito: <select id="dispe" class="form-control">
+								</select>
+								</td>
+
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-12" align="right" style="margin-bottom: 15px">
+					<button class="btn btn-info" style="width: 200px"
+						onclick="javascript:saveAll()">Save</button>
+				</div>
+
+			</div>
+	</ui:define>
+
+</ui:composition>
+</html>
