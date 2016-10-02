@@ -9,36 +9,7 @@
 	<ui:define name="content">
 
 		<body style="color: #005596; background-color: #F3F3F5">
-			<div id="divInicio" class="col-md-12"
-				style="width: 90%; margin-left: 55px; margin-top: 20px; border: solid; border-width: 1.5px; border-color: rgba(61, 193, 230, 0.3); border-radius: 5px; box-shadow: 10px 10px 5px rgba(61, 193, 230, 0.3); font-weight: bold">
-				<div class="col-md-4 col-md-offset-4"
-					style="margin-top: 50px; color: #16223F; font-size: 25px"
-					align="center">SU CUENTA AUN NO HA SIDO REGISTRADA</div>
-				<div class="col-md-4 col-md-offset-4"
-					style="margin-top: 15px; color: #16223F; font-size: 16px"
-					align="center">PORFAVOR INGRESE SU CODIGO Y SU DNI PARA
-					PROCEDER CON EL REGISTRO</div>
-				<div class="col-md-4 col-md-offset-4" style="margin-top: 20px"
-					align="center">
-					CORREO ACTUAL<input id="correoactual" class="form-control"
-						style="color: #16223F; font-weight: bold; text-align: center"
-						disabled>
-				</div>
-
-				<div class="col-md-3 col-md-offset-3"
-					style="margin-top: 20px; margin-bottom: 15px" align="center">
-					CODIGO UPAGU<input id="codigoactual" class="form-control"
-						style="color: #16223F; font-weight: bold; text-align: center">
-				</div>
-				<div class="col-md-3" style="margin-top: 20px; margin-bottom: 15px"
-					align="center">
-					DNI<input id="dniactual" class="form-control"
-						style="color: #16223F; font-weight: bold; text-align: center">
-				</div>
-				<button class="btn btn-success col-md-10 col-md-offset-1"
-					style="margin-bottom: 50px; border: solid; border-width: 1.5px; border-color: rgba(61, 193, 230, 0.3); border-radius: 5px; box-shadow: 10px 10px 5px rgba(61, 193, 230, 0.3)"
-					onclick="javascript:insCorreo()">REGISTRAR</button>
-			</div>
+			
 
 
 			<div id="divPrincipal">
@@ -51,21 +22,21 @@
 							<tbody>
 								<tr>
 									<td style="vertical-align: middle">ID:<input id="idpe"
-										class="form-control" disabled></td>
+										class="form-control" disabled="false"/></td>
 									<td></td>
 								</tr>
 								<tr>
 									<td style="vertical-align: middle">Nombres: <input
-										id="nope" class="form-control"></td>
+										id="nope" class="form-control"/></td>
 									<td></td>
 								</tr>
 								<tr>
 
 									<td style="vertical-align: middle">Apellido Paterno: <input
-										id="appape" class="form-control"></td>
+										id="appape" class="form-control"/></td>
 
 									<td style="vertical-align: middle">Apellido Materno: <input
-										id="apmape" class="form-control"></td>
+										id="apmape" class="form-control"/></td>
 								</tr>
 								<tr>
 
@@ -88,7 +59,7 @@
 
 
 									<td style="vertical-align: middle">Número Documento: <input
-										id="nudo" type="number" class="form-control"></td>
+										id="nudo" type="number" class="form-control"/></td>
 								</tr>
 
 
@@ -105,7 +76,7 @@
 
 									<td style="vertical-align: middle">Fecha Nacimiento: <input
 										id="fenape" type="date" style="height: 35px"
-										class="form-control"></td>
+										class="form-control"/></td>
 
 									<td style="vertical-align: middle">Estado Civil: <select
 										id="escipe" class="form-control">
@@ -124,7 +95,7 @@
 								<tr>
 
 									<td style="vertical-align: middle">Dirección: <input
-										id="dirpe" class="form-control"></td>
+										id="dirpe" class="form-control"/></td>
 
 									<td style="vertical-align: middle">Ciudad: <select
 										id="deppe" class="form-control"
@@ -134,24 +105,24 @@
 								</tr>
 								<tr>
 									<td style="vertical-align: middle">E-mail: <input
-										id="emape" class="form-control" DISABLED></td>
+										id="emape" class="form-control" DISABLED="false"/></td>
 
 
 									<td style="vertical-align: middle">Telefono 1: <input
-										id="te1pe" class="form-control"></td>
+										id="te1pe" class="form-control"/></td>
 								</tr>
 								<tr style="display: none">
 
 									<td style="vertical-align: middle">Telefono 2: <input
-										id="te2pe" class="form-control"></td>
+										id="te2pe" class="form-control"/></td>
 
 									<td style="vertical-align: middle">Celular 1: <input
-										id="ce1pe" class="form-control"></td>
+										id="ce1pe" class="form-control"/></td>
 								</tr>
 								<tr style="display: none">
 
 									<td style="vertical-align: middle">Celular 2: <input
-										id="ce2pe" class="form-control"></td>
+										id="ce2pe" class="form-control"/></td>
 									<td style="vertical-align: middle; display: none">
 										Distrito: <select id="dispe" class="form-control">
 									</select>
@@ -195,7 +166,7 @@
 						<center style="font-size: 20px; margin-bottom: 10px">Educación:</center>
 						<div class="row">
 							<div class="col-md-3">
-								Título diploma:<input id="edtitulo" class="form-control">
+								Título diploma:<input id="edtitulo" class="form-control"/>
 							</div>
 							<div class="col-md-3">
 								Universidad/Institución:<select id="eduniversidad"
@@ -203,7 +174,7 @@
 							</div>
 							<div class="col-md-3">
 								Nombre Otra Universidad:<input id="edotrauniversidad"
-									class="form-control">
+									class="form-control"/>
 							</div>
 						</div>
 						<div class="row">
@@ -215,11 +186,11 @@
 							</div>
 							<div class="col-md-3">
 								Año Inicio:<input id="edfinicio" class="form-control"
-									type="date" style="height: 35px">
+									type="date" style="height: 35px"/>
 							</div>
 							<div class="col-md-3">
 								Año Fin:<input id="edffin" class="form-control" type="date"
-									style="height: 35px">
+									style="height: 35px"/>
 							</div>
 						</div>
 						<div class="col-md-12" align="right">
@@ -262,23 +233,23 @@
 									<option value="CERTIFICACION">CERTIFICACIÓN</option></select>
 							</div>
 							<div class="col-md-3">
-								Nombre:<input id="cernombre" class="form-control">
+								Nombre:<input id="cernombre" class="form-control"/>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-3">
-								Institución:<input id="cerinst" class="form-control">
+								Institución:<input id="cerinst" class="form-control"/>
 							</div>
 							<div class="col-md-3">
 								País:<select id="cerpais" class="form-control"></select>
 							</div>
 							<div class="col-md-3">
 								F Exped.:<input id="cerfexp" class="form-control" type="date"
-									style="height: 35px">
+									style="height: 35px"/>
 							</div>
 							<div class="col-md-3">
 								F Venc.:<input id="cerfvenc" class="form-control" type="date"
-									style="height: 35px">
+									style="height: 35px"/>
 							</div>
 							<div class="col-md-12" align="right">
 								<button id="asd" class="btn btn-info"
@@ -387,15 +358,15 @@
 								País:<select id="ceridipais" class="form-control"></select>
 							</div>
 							<div class="col-md-3">
-								Institución:<input id="ceridiinst" class="form-control">
+								Institución:<input id="ceridiinst" class="form-control"/>
 							</div>
 							<div class="col-md-3">
 								F Exped.:<input id="ceridifexp" class="form-control" type="date"
-									style="height: 35px">
+									style="height: 35px"/>
 							</div>
 							<div class="col-md-3">
 								F Venc.:<input id="ceridifvenc" class="form-control" type="date"
-									style="height: 35px">
+									style="height: 35px"/>
 							</div>
 							<div class="col-md-12" align="right">
 								<button id="asd" class="btn btn-info"
@@ -435,10 +406,10 @@
 							Externa:</center>
 						<div class="row">
 							<div class="col-md-4">
-								Puesto:<input id="exppuesto" class="form-control">
+								Puesto:<input id="exppuesto" class="form-control"/>
 							</div>
 							<div class="col-md-4">
-								Empresas/Institución:<input id="expempresa" class="form-control">
+								Empresas/Institución:<input id="expempresa" class="form-control"/>
 							</div>
 							<div class="col-md-4">
 								Sector:<select id="expsector" class="form-control"></select>
@@ -446,15 +417,15 @@
 						</div>
 						<div class="row">
 							<div class="col-md-4">
-								Proyecto:<input id="expproyecto" class="form-control">
+								Proyecto:<input id="expproyecto" class="form-control"/>
 							</div>
 							<div class="col-md-4">
 								F. Inicio:<input id="expfinicio" class="form-control"
-									type="date" style="height: 35px">
+									type="date" style="height: 35px"/>
 							</div>
 							<div class="col-md-4">
 								F. Fin:<input id="expffin" class="form-control" type="date"
-									style="height: 35px">
+									style="height: 35px"/>
 							</div>
 							<div class="col-md-12">
 								Principales Labores:
@@ -505,13 +476,13 @@
 									<option value="ESPOSA">Esposa</option></select>
 							</div>
 							<div class="col-md-3">
-								Nombre:<input id="famnombre" class="form-control">
+								Nombre:<input id="famnombre" class="form-control"/>
 							</div>
 							<div class="col-md-3">
-								Ape Paterno:<input id="fampaterno" class="form-control">
+								Ape Paterno:<input id="fampaterno" class="form-control"/>
 							</div>
 							<div class="col-md-3">
-								Ape Materno:<input id="fammaterno" class="form-control">
+								Ape Materno:<input id="fammaterno" class="form-control"/>
 							</div>
 						</div>
 						<div class="row">
@@ -524,11 +495,11 @@
 								Tipo Doc:<select id="famtipodoc" class="form-control"></select>
 							</div>
 							<div class="col-md-3">
-								Numero Documento:<input id="famnumerodoc" class="form-control">
+								Numero Documento:<input id="famnumerodoc" class="form-control"/>
 							</div>
 							<div class="col-md-3">
 								Fecha Nacimiento:<input id="famfnacimiento" type="date"
-									class="form-control">
+									class="form-control"/>
 							</div>
 							<div class="col-md-12" align="right">
 								<button id="asd" class="btn btn-info"
@@ -568,27 +539,27 @@
 						<div class="row">
 							<center style="font-size: 20px; margin-bottom: 10px">Contacto:</center>
 							<div class="col-md-3">
-								Nombre:<input id="emernombre" class="form-control">
+								Nombre:<input id="emernombre" class="form-control"/>
 							</div>
 							<div class="col-md-3">
-								Ape Paterno:<input id="emerpaterno" class="form-control">
+								Ape Paterno:<input id="emerpaterno" class="form-control"/>
 							</div>
 							<div class="col-md-3">
-								Ape Materno:<input id="emermaterno" class="form-control">
+								Ape Materno:<input id="emermaterno" class="form-control"/>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-md-3">
-								Telefono Fijo:<input id="emerfijo" class="form-control">
+								Telefono Fijo:<input id="emerfijo" class="form-control"/>
 							</div>
 							<div class="col-md-3">
-								Celular:<input id="emercel" class="form-control">
+								Celular:<input id="emercel" class="form-control"/>
 							</div>
 							<div class="col-md-3">
-								Correo:<input id="emercorreo" class="form-control">
+								Correo:<input id="emercorreo" class="form-control"/>
 							</div>
 							<div class="col-md-3">
-								Parentesco:<input id="emerparen" class="form-control">
+								Parentesco:<input id="emerparen" class="form-control"/>
 							</div>
 							<div class="col-md-12" align="right">
 								<button id="asd" class="btn btn-info"
@@ -614,7 +585,7 @@
 							<div class="modal-header">
 								<button type="button" class="close" data-dismiss="modal"
 									aria-label="Close">
-									<span aria-hidden="true">&times;</span>
+									<span aria-hidden="true"></span>
 								</button>
 								<h4 class="modal-title" id="myModalLabel">Seguro?</h4>
 							</div>
@@ -629,7 +600,7 @@
 						onclick="javascript:saveAll()">Save</button>
 				</div>
 			</div>
-		</body>
+		</body>>
 
 
 
